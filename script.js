@@ -19,7 +19,8 @@
 
     let newQuote = document.createElement("p");
     newQuote.classList.add("quote");
-    newQuote.innerHTML = “ ${message} ”<br><strong>- ${name || "Anonymous"}</strong>;
+    newQuote.innerHTML = `${message} <br><strong>- ${name || "Anonymous"}</strong>`;
+
 
     newCard.appendChild(newQuote);
     recommendationsContainer.appendChild(newCard);
